@@ -12,7 +12,7 @@ The challenge will happen for 4 weeks, starting on 17th May, 2021.
 <h4 align="justify"> 
 	🚧  HTML, CSS, Javascript 🚀 under development  🚧
 </h4>
-
+<a href="https://janynnemattos.github.io/alura_challenge/">✨ Check how it is looking now ✨</a>
 
 #alura_challenge 
 #AluraChallenges
