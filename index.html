@@ -13,60 +13,70 @@
     <body>
         <header>
             <div class="cabecalho">
-                <img class ="logo-cabecalho" src="imgs/logo-plataforma.png">
+                <div class="logo-cabecalho">
+                    <img class="img-logo" src="imgs/logo-plataforma.png">
+                 </div>
+
 
                 <div id="busca-cabecalho">
                    <input type="search" id="textobusca" placeholder="Busque por algo...">
                 </div>
 
-                <img class ="userfoto-cabecalho" src="imgs/foto-perfil.png">
+                <div class="user-foto">
+                    <img class ="userfoto-cabecalho" src="imgs/foto-perfil.jpg">
+                    <span>Megg Maria</span>
+                 </div>
             </div> 
         </header>
 
         <main class="corpo-do-site">
             <nav class="menu-navegacao">
-                <h1 class="titulo-principal">Menu</h1>
+                <h1 class="titulo-sidebar">Menu</h1>
 
                 <ul>
                     <li><a class="link-navegacao" href="url">
                         <div class="icon-cointainer">
                             <img src="imgs/icon-1.svg" class="icone">
-                        </div> Editor de codigo</a></li>
-                    <li><a class="link-navegacao" href="url">xxxx Comunidade</a></li>
+                        </div> Editor de código</a></li>
+
+                        <li><a class="link-navegacao" href="url">
+                            <div class="icon-cointainer">
+                                <img src="imgs/icon-2.svg" class="icone">
+                            </div> Comunidade</a></li>
                 </ul>
                 
             </nav>
            
             <div class="meio-pagina">
             <div class="editor-texto">
-                <div class="botoes">
-                </div>
-                <div class="interior-editor-texto">
-                    <p>const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+            <div class="botoes">
+                    <button class="button-red"></button>
+                    <button class="button-yellow"></button>
+                    <button class="button-green"></button>
+                    </div>
+            <textarea class="interior-editor-texto" placeholder="Escreva seu codigo aqui">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
-                    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-                        
-                    const unfold = (f, seed) => {
-                        const go = (f, seed, acc) => {
-                        const res = f(seed)
-                        return res ? go(f, res[1], acc.concat([res[0]])) : acc
-                          }
-                        return go(f, seed, [])}</p>
-                </div>
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                    
+const unfold = (f, seed) => {
+    const go = (f, seed, acc) => {
+        const res = f(seed)
+        return res ? go(f, res[1], acc.concat([res[0]])) : acc
+    }
+    return go(f, seed, [])
+}</textarea>
             </div>  
             <button class="botao-highlight">Visualizar com o highlight</button>  
             </div>
                 
-            
-
             <form class="menu-direito">
                 <div class="meu-projeto">
-                    <h2 class="titulo-principal">Seu projeto</h2>
+                    <h2 class="titulo-sidebar">Seu projeto</h2>
                     <input type="text" id="nome-projeto" placeholder="Nome do seu projeto">
                     <input type="text" id="descricao-projeto" placeholder="Descricao do projeto">
                 </div>
                 <div class="personalizacao">
-                    <h3 class="titulo-principal">Personalizacao</h3>
+                    <h3 class="titulo-sidebar">Personalização</h3>
                     <select class="dropdown-selection">
                         <option>Javascript</option>
                         <option>HTML</option>
@@ -76,7 +86,7 @@
 
                 <input class="cor-projeto" type="color" value="#6BD1FF">
 
-                <input type="submit" id="salvar-projeto" value="Salvar projeto">
+                <input type="submit" class="salvar-projeto" value="Salvar projeto">
 
                 </div>
             </form>
