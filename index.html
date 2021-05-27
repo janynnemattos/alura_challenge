@@ -2,8 +2,10 @@
 <html lang="FR">
     <head>
         <meta charset="utf-8">
+        <title> Accueil </title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="highlight-js/styles/dracula.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
             <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,7 +19,6 @@
                     <img class="img-logo" src="imgs/logo-plataforma.png">
                  </div>
 
-
                 <div class="search-head-of-page">
                    <input type="search" class="search-text" placeholder="Écrivez votre recherche ici...">
                 </div>
@@ -25,48 +26,40 @@
                 <div class="user-photo-head-of-page">
                     <img class ="userphoto" src="imgs/foto-perfil.jpg">
                     <span>Janynne Mattos</span>
-                 </div>
+                </div>
             </div> 
         </header>
 
         <main class="main-content">
             <nav class="menu-nav">
                 <h1 class="title-sidebar">Menu</h1>
-
                 <ul>
-                    <li><a class="link-nav" href="url">
+                    <li><a class="link-nav" href="index.html">
                         <div class="icon-cointainer">
                             <img src="imgs/icon-1.svg" class="icone">
                         </div> Éditeur de code</a></li>
 
-                        <li><a class="link-nav" href="url">
-                            <div class="icon-cointainer">
-                                <img src="imgs/icon-2.svg" class="icone">
-                            </div> Communauté</a></li>
+                    <li><a class="link-nav" href="communaute.html">
+                        <div class="icon-cointainer">
+                            <img src="imgs/icon-2.svg" class="icone">
+                        </div> Communauté</a></li>
                 </ul>
-                
             </nav>
            
             <div class="middle-page">
-            <div class="text-editor">
-            <div class="buttons">
-                    <button class="button-red"></button>
-                    <button class="button-yellow"></button>
-                    <button class="button-green"></button>
+                <div class="text-content-container">
+                       <div class="buttons">
+                            <button class="button-red"></button>
+                            <button class="button-yellow"></button>
+                            <button class="button-green"></button>
+                        </div>
+                    <div class="text-editor">                  
+                        <div class="text-editor-container">
+                            <code class="preview hljs" contenteditable="true" aria-label="editor"></code>
+                        </div>
                     </div>
-            <textarea class="inside-text-editor" placeholder="Écrivez votre code ici">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
-
-const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-                    
-const unfold = (f, seed) => {
-    const go = (f, seed, acc) => {
-        const res = f(seed)
-        return res ? go(f, res[1], acc.concat([res[0]])) : acc
-    }
-    return go(f, seed, [])
-}</textarea>
-            </div>  
-            <button class="button-highlight">Mis en exergue</button>  
+                </div>  
+                <button class="button-highlight">Mis en exergue</button>  
             </div>
                 
             <form class="menu-right">
@@ -77,24 +70,21 @@ const unfold = (f, seed) => {
                 </div>
                 <div class="personalization">
                     <h3 class="title-sidebar">Personnalisation</h3>
-                    <select class="dropdown-selection">
-                        <option>Javascript</option>
-                        <option>HTML</option>
-                        <option>CSS</option>
+                    <select name="language" class="language">
+                        <option value="javascript">JavaScript</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="ruby">RUBY</option>
                     </select>
-
-
-                <input class="color-project" type="color" value="#6BD1FF">
-
-                <input type="submit" class="save-project" value="Sauvegarder le projet">
-
+                    <input class="color-project" type="color" value="#6BD1FF">
+                    <input type="submit" class="save-project" value="Sauvegarder le projet">
                 </div>
             </form>
-        </main>
-
+        </main> 
     </body>
 
     <footer>
-
     </footer>
+    <script src="highlight-js/highlight.pack.js"></script>
+    <script src="content.js"></script>
 </html>

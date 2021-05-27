@@ -98,7 +98,7 @@ body {
     width: 50%;
 }
 .buttons {
-    display: inline-block;
+    display: block;
     position: absolute;
     margin-left: 1.5em;
 
@@ -120,23 +120,24 @@ body {
 .button-green {
     background-color: #27C93F;
 }
-.text-editor {
+.text-content-container {
     width: calc(100% - 64px);
-    height: auto;
+    height: 334px;
     background-color: #6BD1FF;
     border-radius: 40px;
     padding: 32px;
 }
 
-.inside-text-editor {
+.text-editor {
     font-family: 'Roboto Mono', monospace;
     background-color: #141414;
     color: #FFFFFF;
     width: calc(100% - 4em);
-    height: 234px;
+    height: calc(334px - 4em);
     text-align: justify;
     padding: 2em;
 }
+
 .button-highlight, .save-project {
     background: #5081FB;
     color: #051D3B;
@@ -176,7 +177,7 @@ body {
     padding-top: 1em;
 }
 
-.name-project, .description-project, .dropdown-selection {
+.name-project, .description-project, .language {
     background: rgba(255, 255, 255, 0.16);
     color: #FFFFFF;
     border-radius: 8px;
@@ -188,12 +189,12 @@ body {
     margin-bottom: .5em;
 }
 
-.dropdown-selection option{
+.language option{
     background-color: #051D3B;
     color: #FFFFFF;
 }
 
-.dropdown-selection:hover{
+.language:hover{
     background-color: #FFFFFF3D;
 }
 
