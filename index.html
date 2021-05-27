@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="FR">
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="reset.css">
@@ -12,49 +12,49 @@
 
     <body>
         <header>
-            <div class="cabecalho">
-                <div class="logo-cabecalho">
+            <div class="head-of-page">
+                <div class="logo-head-of-page">
                     <img class="img-logo" src="imgs/logo-plataforma.png">
                  </div>
 
 
-                <div id="busca-cabecalho">
-                   <input type="search" id="textobusca" placeholder="Busque por algo...">
+                <div class="search-head-of-page">
+                   <input type="search" class="search-text" placeholder="Écrivez votre recherche ici...">
                 </div>
 
-                <div class="user-foto">
-                    <img class ="userfoto-cabecalho" src="imgs/foto-perfil.jpg">
-                    <span>Megg Maria</span>
+                <div class="user-photo-head-of-page">
+                    <img class ="userphoto" src="imgs/foto-perfil.jpg">
+                    <span>Janynne Mattos</span>
                  </div>
             </div> 
         </header>
 
-        <main class="corpo-do-site">
-            <nav class="menu-navegacao">
-                <h1 class="titulo-sidebar">Menu</h1>
+        <main class="main-content">
+            <nav class="menu-nav">
+                <h1 class="title-sidebar">Menu</h1>
 
                 <ul>
-                    <li><a class="link-navegacao" href="url">
+                    <li><a class="link-nav" href="url">
                         <div class="icon-cointainer">
                             <img src="imgs/icon-1.svg" class="icone">
-                        </div> Editor de código</a></li>
+                        </div> Éditeur de code</a></li>
 
-                        <li><a class="link-navegacao" href="url">
+                        <li><a class="link-nav" href="url">
                             <div class="icon-cointainer">
                                 <img src="imgs/icon-2.svg" class="icone">
-                            </div> Comunidade</a></li>
+                            </div> Communauté</a></li>
                 </ul>
                 
             </nav>
            
-            <div class="meio-pagina">
-            <div class="editor-texto">
-            <div class="botoes">
+            <div class="middle-page">
+            <div class="text-editor">
+            <div class="buttons">
                     <button class="button-red"></button>
                     <button class="button-yellow"></button>
                     <button class="button-green"></button>
                     </div>
-            <textarea class="interior-editor-texto" placeholder="Escreva seu codigo aqui">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+            <textarea class="inside-text-editor" placeholder="Écrivez votre code ici">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
 const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
                     
@@ -66,17 +66,17 @@ const unfold = (f, seed) => {
     return go(f, seed, [])
 }</textarea>
             </div>  
-            <button class="botao-highlight">Visualizar com o highlight</button>  
+            <button class="button-highlight">Mis en exergue</button>  
             </div>
                 
-            <form class="menu-direito">
-                <div class="meu-projeto">
-                    <h2 class="titulo-sidebar">Seu projeto</h2>
-                    <input type="text" id="nome-projeto" placeholder="Nome do seu projeto">
-                    <input type="text" id="descricao-projeto" placeholder="Descricao do projeto">
+            <form class="menu-right">
+                <div class="my-project">
+                    <h2 class="title-sidebar">Votre projet</h2>
+                    <input type="text" class="name-project" placeholder="Nom de votre projet">
+                    <input type="text" class="description-project" placeholder="Description du projet">
                 </div>
-                <div class="personalizacao">
-                    <h3 class="titulo-sidebar">Personalização</h3>
+                <div class="personalization">
+                    <h3 class="title-sidebar">Personnalisation</h3>
                     <select class="dropdown-selection">
                         <option>Javascript</option>
                         <option>HTML</option>
@@ -84,9 +84,9 @@ const unfold = (f, seed) => {
                     </select>
 
 
-                <input class="cor-projeto" type="color" value="#6BD1FF">
+                <input class="color-project" type="color" value="#6BD1FF">
 
-                <input type="submit" class="salvar-projeto" value="Salvar projeto">
+                <input type="submit" class="save-project" value="Sauvegarder le projet">
 
                 </div>
             </form>

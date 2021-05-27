@@ -7,24 +7,24 @@ body {
 }
 
 /*cabeca da pagina*/
-.cabecalho {
+.head-of-page {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 32px 0;
 }
-.logo-cabecalho {
+.logo-head-of-page {
     width: 25%;
 }
 .img-logo {
     width: 60%;
     margin-left: 2em;
 }
-#busca-cabecalho {
+.search-head-of-page {
     border: none;
     width: 50%;
 }
-#textobusca {
+.search-text {
     background: rgba(255, 255, 255, 0.16);
     color: #FFFFFF;
     border-radius: 8px;
@@ -35,7 +35,7 @@ body {
     height: 56px;
     padding-left: 1em;
 }
-.user-foto {
+.user-photo-head-of-page {
     width: calc(25% - 1em);
     display: flex;
     align-items: center;
@@ -44,13 +44,13 @@ body {
     color: white;
     font-size: 1.2em;
 }
-.userfoto-cabecalho {
+.userphoto {
     border-radius: 50%;
     width: 80px;
     margin-right: 1em;
 }
 
-.titulo-sidebar {
+.title-sidebar {
     letter-spacing: 0.4em;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -58,20 +58,20 @@ body {
     height: 18px;
     padding: 1em;
 }
-/*corpo do site*/
-.corpo-do-site {
+/*body*/
+.main-content {
     display: flex;
     justify-content: space-between;
 }
 /*menu esquerda*/
-.menu-navegacao {
+.menu-nav {
    /* padding: 1em;
     margin: 1em;*/
     width: 25%;
     padding: 0 2em;
     box-sizing: border-box;
 }
-.link-navegacao {
+.link-nav {
     color: #FFFFFF;
     text-decoration: none;
     display: flex;
@@ -93,11 +93,11 @@ body {
 
 
 /*centro da pagina*/
-.meio-pagina {
+.middle-page {
     text-align: center;
     width: 50%;
 }
-.botoes {
+.buttons {
     display: inline-block;
     position: absolute;
     margin-left: 1.5em;
@@ -120,7 +120,7 @@ body {
 .button-green {
     background-color: #27C93F;
 }
-.editor-texto {
+.text-editor {
     width: calc(100% - 64px);
     height: auto;
     background-color: #6BD1FF;
@@ -128,7 +128,7 @@ body {
     padding: 32px;
 }
 
-.interior-editor-texto {
+.inside-text-editor {
     font-family: 'Roboto Mono', monospace;
     background-color: #141414;
     color: #FFFFFF;
@@ -137,7 +137,7 @@ body {
     text-align: justify;
     padding: 2em;
 }
-.botao-highlight, .salvar-projeto {
+.button-highlight, .save-project {
     background: #5081FB;
     color: #051D3B;
     border-radius: 8px;
@@ -148,35 +148,35 @@ body {
     margin: 1em 0;
 }
 
-.botao-highlight:hover, .salvar-projeto:hover {
+.button-highlight:hover, .save-project:hover {
     background: #7BA4FC;
 }
 
-.botao-highlight:active, .salvar-projeto:active {
+.button-highlight:active, .save-project:active {
     background: #7BA4FC;
     border: solid;
     border-color: #5081FB;
 }
-.botao-highlight:focus .salvar-projeto:focus {
+.button-highlight:focus .save-project:focus {
     background: #96B9FD;
 }
 
 
 /*menu direito*/
-.menu-direito {
+.menu-right {
     width: 25%;
     padding: 0 2em;
     box-sizing: border-box;
 }
-.meu-projeto, .personalizacao {
+.my-project, .personalization {
     max-width: 100%;
 }
 
-.personalizacao{
+.personalization {
     padding-top: 1em;
 }
 
-#nome-projeto, #descricao-projeto, .dropdown-selection {
+.name-project, .description-project, .dropdown-selection {
     background: rgba(255, 255, 255, 0.16);
     color: #FFFFFF;
     border-radius: 8px;
@@ -197,7 +197,7 @@ body {
     background-color: #FFFFFF3D;
 }
 
-.cor-projeto {
+.color-project {
     background: #051D3B;
     border-radius: 8px;
     border: solid;
