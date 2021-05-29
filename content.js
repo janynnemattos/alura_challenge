@@ -26,5 +26,21 @@ function selectColor() {
 }
 buttonColor.addEventListener('input', selectColor);
 
+//hamburguer button mobile
+const buttonMobile = document.querySelector('.button-mobile')
 
+function toggleMenu(event) {
+    if (event.type === 'touchstart') event.preventDefault();
+    const menuNav = document.querySelector('.menu-nav')
+    menuNav.classList.toggle('active');
+    const active = menuNav.classList.contains('active')
+    event.currentTarget.setAttribute('aria-expended', active)
+    if (active) {
+        event.currentTarget.setAttribute('aria-label', 'Fermer Menu')
+    } else {
+        event.currentTarget.setAttribute('aria-label', 'Ouvrir Menu')
+    }
+}
 
+buttonMobile.addEventListener('click', toggleMenu)
+buttonMobile.addEventListener('touchstart', toggleMenu)

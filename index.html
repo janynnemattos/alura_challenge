@@ -20,7 +20,7 @@
                  </div>
 
                 <div class="search-head-of-page">
-                   <input type="search" class="search-text" placeholder="Écrivez votre recherche ici...">
+                    <input type="search" class="search-text" placeholder="Écrivez votre recherche ici...">
                 </div>
 
                 <div class="user-photo-head-of-page">
@@ -31,21 +31,25 @@
         </header>
 
         <main class="main-content">
-            <nav class="menu-nav">
+            <div class="left-page">
                 <h1 class="title-sidebar">Menu</h1>
-                <ul>
-                    <li><a class="link-nav" href="index.html">
-                        <div class="icon-cointainer">
-                            <img src="imgs/icon-1.svg" class="icone">
-                        </div> Éditeur de code</a></li>
-
-                    <li><a class="link-nav" href="communaute.html">
-                        <div class="icon-cointainer">
-                            <img src="imgs/icon-2.svg" class="icone">
-                        </div> Communauté</a></li>
-                </ul>
-            </nav>
-           
+                <nav class="menu-nav">
+                    <button aria-label="Ouvrir Menu" class="button-mobile"aria-haspopup="true" aria-controls="link-nav-ul"
+                    aria-expanded="false">
+                        <span class="hamburger"></span>                    
+                    </button>
+                    <ul class="link-nav-ul" role="menu">
+                        <li><a class="link-nav" href="index.html">
+                            <div class="icon-cointainer">
+                                <img src="imgs/icon-1.svg" class="icone">
+                            </div> Éditeur de code</a></li>
+                        <li><a class="link-nav" href="communaute.html">
+                            <div class="icon-cointainer">
+                                <img src="imgs/icon-2.svg" class="icone">
+                            </div> Communauté</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div class="middle-page">
                 <div class="text-content-container">
                        <div class="buttons">
