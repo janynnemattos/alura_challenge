@@ -209,28 +209,45 @@ body {
     box-sizing: border-box;
     height: 4em;
 }
-
-
 .button-mobile {
     display: none;
 }
 
 @media (max-width: 400px) {
-
-    .user-photo-head-of-page {
-        visibility: hidden;
+    .head-of-page {
+        margin: 0px;
+        display:initial;
     }
+    .logo-head-of-page {
+        width: 60%;
+    }
+    .img-logo {
+        width: 100%;
+        margin-left: 0;
+        margin-left: 11px;
+    }
+    .user-photo-head-of-page {
+        display: none;
+    }
+    
     .search-text {
         background:url(imgs/search.svg) right 1em center no-repeat;
+        position: absolute;
+        right: 5em;
+        top: 1em;
+        width: 100px;
+        height: 50px;
     }
-
+    .search-text::placeholder {
+        color: transparent;
+    }
     .link-nav-ul {
         display: block;
         position:absolute;
         width: 100%;
-        top: 100px;
         right: 0px;
-        background: red;
+        border-radius: 8px;
+        background: #2D415B;
         height: 0px;
         transition: .6s;
         z-index: 1000;
@@ -245,27 +262,42 @@ body {
     .link-nav-ul a {
         padding: 1rem 0;
         margin: 0 1rem;
-        border-bottom: 2px solid #FFBD2E;
+        background: rgba(80, 129, 251, 0,16);
+    }
+    .link-nav-ul:hover {
+        background: rgba(80, 129, 251, 0,64);
+    }    
+    .link-nav-ul:active {
+        background: rgba(80, 129, 251, 1);
+    }
+    .left-page {
+        width: 100%;
+    }
+    
+    .left-page h1 {
+        display: none;
     }
     .button-mobile {
+        position: absolute;
+        right: 1em;
+        top: 1.5em;
         display: flex;
-        padding: .5rem 1rem;
         font-size: 1rem;
         border:none;
         background: none;
         cursor: pointer;
-        gap: .5rem;
     }
+
     .hamburger {
         width: 20px;
-        border-top: 2px solid;
+        border-top: 4px solid #FFFFFF;
     }
     .hamburger::after,.hamburger::before {
         content:'';
         display: block;
         width: 20px;
-        height: 2px;
-        background-color: currentColor;
+        height: 4px;
+        background-color: #FFFFFF;
         margin-top: 5px;
         transition: .3s;
         position: relative;
@@ -279,6 +311,24 @@ body {
     .menu-nav.active .hamburger::after{
         transform: rotate(-135deg);
         top: -7px;
-
+    }
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .middle-page, .menu-right {
+        width: 100%;
+        padding: 0 2em;
+        box-sizing: border-box;
+    }
+    .text-content-container {
+        border-radius: 8px;
+    }
+    .preview hljs typescript {
+        overflow: auto;
+    }
+    .text-editor-container {
+        overflow: scroll;
+        height: 100%;
     }
 }
