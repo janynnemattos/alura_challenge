@@ -30,28 +30,32 @@
             </div> 
         </header>
 
-        <main class="main-content">
-            <nav class="menu-nav">
+        <main class="main-communaute">
+            <div class="left-page">
                 <h1 class="title-sidebar">Menu</h1>
-
-                <ul>
-                    <li><a class="link-nav" href="index.html">
-                        <div class="icon-cointainer">
-                            <img src="imgs/icon-1.svg" class="icone">
-                        </div> Éditeur de code</a></li>
-
+                <nav class="menu-nav">
+                    <button aria-label="Ouvrir Menu" class="button-mobile"aria-haspopup="true" aria-controls="link-nav-ul"
+                    aria-expanded="false">
+                        <span class="hamburger"></span>                    
+                    </button>
+                    <ul class="link-nav-ul" role="menu">
+                        <li><a class="link-nav" href="index.html">
+                            <div class="icon-cointainer">
+                                <img src="imgs/icon-1.svg" class="icone">
+                            </div> Éditeur de code</a></li>
                         <li><a class="link-nav" href="communaute.html">
                             <div class="icon-cointainer">
                                 <img src="imgs/icon-2.svg" class="icone">
                             </div> Communauté</a></li>
-                </ul>
-                
-            </nav>
-           
-            <div class="">
-
+                    </ul>
+                </nav>
             </div>
-            
+           
+            <div class="main-projects">
+                <ul class="all-projects">
+                </ul>
+            </div>
+
         </main>
 
     </body>
@@ -59,4 +63,6 @@
     <footer>
 
     </footer>
+    <script src="communaute.js"></script>
+    <script src="highlight-js/highlight.pack.js"></script>
 </html>
