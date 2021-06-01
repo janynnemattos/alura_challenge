@@ -40,11 +40,24 @@ body {
     width: calc(25% - 1em);
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     padding-right: 1em;
     color: white;
     font-size: 1.2em;
 }
+.user-photo-head-of-page a, .user-photo-head-of-page:visited{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color:#FFFFFF;
+}
+.user-photo-head-of-page:hover {
+    color: #FFFFFF;
+    border-radius: 8px;
+    opacity: 0.5;
+    transition: .5s;
+}
+
 .userphoto {
     border-radius: 50%;
     width: 80px;
@@ -272,13 +285,21 @@ body {
     .logo-head-of-page {
         width: 60%;
     }
+    .main-communaute {
+        display: flex;
+    }
     .img-logo {
         width: 100%;
         margin-left: 0;
         margin-left: 11px;
     }
     .user-photo-head-of-page {
-        display: none;
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        width: 100%;
+        padding-right: 0;
+        margin-left: 1em;
     }
     
     .search-text {
