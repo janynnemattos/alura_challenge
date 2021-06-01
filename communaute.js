@@ -15,15 +15,16 @@ function showProjects() {
     projects.forEach(project => {
         allProjects.innerHTML+= createCard(project)
         const codeHtml = allProjects.querySelector(`[data-id="${project.id}"]`)
-        codeHtml.querySelector('code').innerText = project.detailsOfProject.code
+        const codeHtmlBlock = codeHtml.querySelector('code')
+        hljs.highlightBlock(codeHtmlBlock)
     })
 }
 
 function createCard(project) {
     let card = `
     <a href="index.html class="all-projects" data-id="${project.id}">
-        <div class="container-project">
-            <div class="text-content-container">
+        <div class="container-project" >
+            <div class="text-content-container" style="background-color: ${project.detailsOfProject.colorOfProject}"> 
                 <div class="buttons">
                     <button class="button-red"></button>
                     <button class="button-yellow"></button>
@@ -31,7 +32,7 @@ function createCard(project) {
                 </div>
                 <div class="text-editor">                  
                     <div class="text-editor-container">
-                        <code class="preview hljs ${project.detailsOfProject.language}"></code>
+                        <code class="preview hljs ${project.detailsOfProject.language}"> ${project.detailsOfProject.code}</code>
                     </div>
                 </div>
             </div>

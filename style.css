@@ -264,7 +264,7 @@ body {
 
 
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
     .head-of-page {
         margin: 0px;
         display:initial;

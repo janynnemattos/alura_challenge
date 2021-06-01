@@ -59,6 +59,7 @@ buttonSave.addEventListener('click', (event) => {
     }
 })
 
+
 function buildProject() {
     let project = {
         'id': atribuiId(),
@@ -66,7 +67,8 @@ function buildProject() {
             'titleOfProject' : titleOfProject.value,
             'descriptionOfProject': descriptionOfProject.value,
             'language': language.value,
-            'code': codeArea.querySelector('code').innerText
+            'colorOfProject': buttonColor.value,
+            'code': codeArea.querySelector('code').innerText,
         }
     }
     return project
