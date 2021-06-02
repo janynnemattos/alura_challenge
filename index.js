@@ -32,6 +32,7 @@ buttonColor.addEventListener('input', selectColor);
 
 //button save
 buttonSave.addEventListener('click', (event) => {
+    event.preventDefault()
     if (typeof(Storage) !== "undefined"){
         const project = buildProject()
         saveLocalStorage(project)
@@ -39,6 +40,26 @@ buttonSave.addEventListener('click', (event) => {
         console.log("Local Storage n'est pas supporté")
     }
 })
+
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+//function modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+//function click x, close
+span.onclick = function() {
+  modal.style.display = "none";
+}
+//click outside modal, close
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
 
 
 function buildProject() {
@@ -61,6 +82,7 @@ function atribuiId(){
 
 function saveLocalStorage(objectJson) {
     localStorage.setItem(objectJson.id, JSON.stringify(objectJson))
+    codeArea.innerHTML=""
 }
 
 
