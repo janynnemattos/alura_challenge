@@ -20,6 +20,7 @@ function showProjects() {
     })
 }
 
+
 function createCard(project) {
     let card = `
     <a href="index.html class="all-projects" data-id="${project.id}">
@@ -36,13 +37,15 @@ function createCard(project) {
                     </div>
                 </div>
             </div>
+    </a>
             <div class="description-project-content">
                 <h2 class="project-title">${project.detailsOfProject.titleOfProject}</h2>
                 <p class="project-description">${project.detailsOfProject.descriptionOfProject}</p>
                 <span class="project-language ${project.detailsOfProject.language}">${project.detailsOfProject.language}</span>
+
             </div>
         </div>
-    </a>
+    
     `
     console.log(project)
     return card
