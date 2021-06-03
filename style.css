@@ -218,6 +218,31 @@ body {
 .description-project-content {
     padding: 1em;
 }
+.interactions-project{
+    display: flex;
+    align-items: center;
+}
+.icon-project, .icon-project-like {
+    color: #FFFFFF;
+}
+.button-project{
+    appearance: auto;
+    background: transparent;
+    border: none;
+    padding: 8px;
+}
+.style-click{
+    padding: 0.3em;
+}
+.style-click:hover{
+    background:  rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+}
+.style-click:active{
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+}
+
 /*menu right*/
 .menu-right {
     width: 25%;

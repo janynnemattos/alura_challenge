@@ -24,6 +24,12 @@ function showProjects() {
         hljs.highlightBlock(codeHtmlBlock)
     })
 }
+//function likes
+let clicks = 0;
+function onClick() {
+    clicks += 1;
+    document.getElementById("clicks").innerHTML = clicks;
+  };
 
 
 function createCard(project) {
@@ -46,6 +52,15 @@ function createCard(project) {
                 <h2 class="project-title">${project.detailsOfProject.titleOfProject}</h2>
                 <p class="project-description">${project.detailsOfProject.descriptionOfProject}</p>
                 <span class="project-language ${project.detailsOfProject.language}">${project.detailsOfProject.language}</span>
+                <div class="interactions-project">
+                    <div class="style-click">
+                    <button type="button" class="button-project"> <img src="imgs/comentbutton.svg"></button>
+                    </div>
+                    <div class="style-click">
+                    <button type="button" onClick="onClick()" class="button-project"> <img src="imgs/likebutton.svg"></button>
+                    <a id="clicks" class="icon-project-like">0</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
