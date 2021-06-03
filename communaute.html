@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Communauté </title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="highlight-js/styles/dracula.css">
@@ -11,6 +10,7 @@
             <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
             <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <title> Communauté </title>
     </head>
 
     <body>
@@ -18,15 +18,16 @@
             <div class="head-of-page">
                 <div class="logo-head-of-page">
                     <img class="img-logo" src="imgs/logo-plataforma.png">
-                </div>
+                 </div>
 
                 <div class="search-head-of-page">
-                    <input type="search" class="search-text" placeholder="Écrivez votre recherche ici...">
+                    <input type="search" class="search-text" name="q" placeholder="Écrivez votre recherche ici..."
+                    aria-label="Rechercher dans le contenu du site">
                 </div>
 
                 <div class="user-photo-head-of-page">
                     <a href=""><img class ="userphoto" src="imgs/foto-perfil.jpg" label="useruser">
-                    <span label="useruser">Janynne Mattos</span></a>
+                    <span label="useruser" id="fullName">Janynne Mattos</span></a>
                 </div>
             </div> 
         </header>

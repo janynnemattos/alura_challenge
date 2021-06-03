@@ -119,10 +119,14 @@ body {
 }
 .all-projects {
     width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .main-projects{
     max-width: 75%;
     margin-right: 2em;
+    display: flex;
 }
 .buttons {
     display: block;
@@ -156,6 +160,11 @@ body {
 }
 .text-editor-container a{
     text-decoration: none;
+}
+
+.text-content-container, code.preview{
+    overflow: auto;
+    max-height: 80%;
 }
 .text-editor {
     font-family: 'Roboto Mono', monospace;
@@ -332,9 +341,6 @@ body {
 .button-mobile {
     display: none;
 }
-
-
-
 @media screen and (max-width: 400px) {
     .head-of-page {
         margin: 0px;
@@ -343,8 +349,13 @@ body {
     .logo-head-of-page {
         width: 60%;
     }
-    .main-communaute {
-        display: flex;
+    .all-projects,.main-communaute {
+        display: block;
+        max-width: 100%;
+    }
+    .main-projects{
+        max-width: 100%;
+        margin: 1em;
     }
     .img-logo {
         width: 100%;
@@ -458,7 +469,7 @@ body {
         overflow: auto;
     }
     .text-editor-container {
-        overflow: scroll;
+        overflow: auto;
         height: 100%;
     }
 }

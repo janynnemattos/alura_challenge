@@ -4,6 +4,8 @@ const button = document.querySelector('.button-highlight')
 const titleOfProject = document.querySelector('.name-project')
 const descriptionOfProject = document.querySelector('.description-project')
 
+const buttonClose = document.querySelector('.button-red')
+
 const buttonColor = document.querySelector('.color-project')
 const backgroundColor = document.querySelector('.text-content-container')
 
@@ -11,9 +13,9 @@ const buttonSave = document.querySelector('.save-project')
 
 //text editor
 function changeLanguage() {
-    const code = codeArea.querySelector('code')
+    let code = codeArea.querySelector('code').innerText
     codeArea.innerHTML = `<code class="preview hljs ${language.value}" contenteditable="true" aria-label="editor"></code>`
-    codeArea.firstChild.innerText = code.innerText
+    codeArea.firstChild.innerText = code
 }
 language.addEventListener('change', () => {
        changeLanguage()
@@ -40,6 +42,7 @@ buttonSave.addEventListener('click', (event) => {
         console.log("Local Storage n'est pas supporté")
     }
 })
+
 
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
