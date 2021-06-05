@@ -61,6 +61,18 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+//buttonsaveimage
+const buttonGreen = document.querySelector('.button-green')
+buttonGreen.addEventListener('click', () => {
+    domtoimage.toJpeg(backgroundColor, { quality: 1 })
+    .then(function (dataUrl) {
+        var link = document.createElement('a');
+        let title = titleOfProject.value || 'image'
+        link.download = `${title}.jpeg`;
+        link.href = dataUrl;
+        link.click();
+    });
+})
 
 
 
@@ -85,7 +97,7 @@ function atribuiId(){
 
 function saveLocalStorage(objectJson) {
     localStorage.setItem(objectJson.id, JSON.stringify(objectJson))
-    codeArea.innerHTML=""
+    codeArea.innerHTML= ""
 }
 
 

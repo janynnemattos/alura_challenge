@@ -118,7 +118,7 @@ body {
     width: 50%;
 }
 .all-projects {
-    width: auto;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -151,6 +151,10 @@ body {
 .button-green {
     background-color: #27C93F;
 }
+
+.button-red, .button-yellow, .button-green, a:hover {
+    cursor: pointer;
+}
 .text-content-container {
     width: calc(100% - 64px);
     height: 334px;
@@ -172,7 +176,6 @@ body {
     color: #FFFFFF;
     width: calc(100% - 4em);
     height: calc(334px - 4em);
-    text-align: justify;
     padding: 2em;
 }
 
@@ -206,6 +209,7 @@ body {
     padding-bottom: 2em;
     box-sizing: border-box;
     border-radius: 12px;
+    width: 460px;
 }
 .project-title {
     color: #FFFFFF;
@@ -349,12 +353,18 @@ body {
     .logo-head-of-page {
         width: 60%;
     }
-    .all-projects,.main-communaute {
+    .all-projects {
         display: block;
         max-width: 100%;
     }
+    .main-communaute {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
     .main-projects{
-        max-width: 100%;
+        width: 75%;
         margin: 1em;
     }
     .img-logo {
