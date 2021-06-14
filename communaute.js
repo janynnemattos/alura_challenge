@@ -57,7 +57,7 @@ function createCard(project) {
                     <button type="button" class="button-project"> <img src="imgs/comentbutton.svg"></button>
                     </div>
                     <div class="style-click">
-                    <button type="button" onClick="onClick()" class="button-project"> <img src="imgs/likebutton.svg"></button>
+                    <button type="button" onClick="onClick()" class="button-project"><img src="imgs/likebutton.svg"></button>
                     <a id="clicks" class="icon-project-like">0</a>
                     </div>
                 </div>

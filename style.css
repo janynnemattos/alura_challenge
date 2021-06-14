@@ -20,6 +20,7 @@ body {
     width: 60%;
     margin-left: 2em;
 }
+
 .search-head-of-page {
     border: none;
     width: 50%;
@@ -51,7 +52,7 @@ body {
     align-items: center;
     color:#FFFFFF;
 }
-.user-photo-head-of-page:hover {
+.user-photo-head-of-page:hover, .img-logo:hover, .link-nav:hover{
     color: #FFFFFF;
     border-radius: 8px;
     opacity: 0.5;
@@ -153,8 +154,8 @@ body {
 .button-green, .button-green-communaute{
     background-color: #27C93F;
 }
-.button-red:hover, .button-yellow:hover, .button-green:hover {
-    cursor: pointer;
+.button-red:hover,  .button-green:hover {
+    cursor: help;
     opacity: 0.5;
     transition: .3s;
     border-radius: 0px;
@@ -163,15 +164,35 @@ body {
 .text-content-container {
     width: calc(100% - 64px);
     height: 334px;
-    background-color: #6BD1FF;
+    background-color: #FBFF00;
     border-radius: 24px;
     padding: 32px;
 }
 .text-editor-container a{
     text-decoration: none;
 }
+.text-editor-container{
+    max-height: 100%;
+    white-space: pre-wrap;
+    overflow: auto;
+}
 
-.text-content-container, code.preview{
+.text-editor-container::-webkit-scrollbar, .text-editor-container::-webkit-scrollbar-corner{
+    background:transparent;
+    height: 5px;
+    width: 5px;
+}
+
+.text-editor-container::-webkit-scrollbar-thumb{
+    background: #FFFFFF;
+}
+
+
+.preview {
+    height: 100%;
+}
+
+.text-content-container{
     overflow: auto;
     max-height: 80%;
 }
@@ -194,6 +215,7 @@ body {
     height: 56px;
     text-align: center;
     margin: 1em 0;
+    cursor: pointer;
 }
 
 .button-highlight:hover, .save-project:hover {

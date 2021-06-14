@@ -51,8 +51,6 @@ buttonClose.addEventListener('click', () => {
     contentEditor.innerText=""
 })
 
-
-
 //buttonsaveimage
 const buttonGreen = document.querySelector('.button-green')
 buttonGreen.addEventListener('click', () => {

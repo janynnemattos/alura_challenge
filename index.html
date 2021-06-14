@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="FR">
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
         <header>
             <div class="head-of-page">
                 <div class="logo-head-of-page">
-                    <img class="img-logo" src="imgs/logo-plataforma.png">
+                    <a href="https://www.alura.com.br/challenges/front-end/" target="_blank"><img class="img-logo" src="imgs/logo-plataforma.png"></a>
                  </div>
 
                 <div class="search-head-of-page">
@@ -26,7 +26,7 @@
                 </div>
 
                 <div class="user-photo-head-of-page">
-                    <a href=""><img class ="userphoto" src="imgs/foto-perfil.jpg" label="useruser">
+                    <a href="https://www.linkedin.com/in/janynnemattos/" target="_blank"><img class ="userphoto" src="imgs/foto-perfil.jpg" label="useruser">
                     <span label="useruser" id="fullName">Janynne Mattos</span></a>
                 </div>
             </div> 
@@ -56,19 +56,17 @@
                 <div class="text-content-container">
                        <div class="buttons">
                         <button title="Effacer le contenu" class="button-red"></button> 
-                        <button title="Partager" class="button-yellow"></button> 
+                        <button class="button-yellow"></button> 
                         <button title="Sauvegarder comme image" class="button-green"></button>                  
                         </div>
-                    <div class="text-editor">                  
-                        <div class="text-editor-container">
-                            <code class="preview hljs" contenteditable="true" aria-label="editor"></code>
+                    <div class="text-editor"><div class="text-editor-container"><pre><code class="preview hljs" contenteditable="true" aria-label="editor" spellcheck="false">Écrivez votre code ici..</code></pre>
                         </div>
                     </div>
                 </div>  
                 <button class="button-highlight">Mis en exergue</button>  
             </div>
-                
-            <form class="menu-right">
+                 
+            <form class="menu-right" required>
                 <div class="my-project">
                     <h2 class="title-sidebar">Votre projet</h2>
                     <input type="text" class="name-project" placeholder="Nom de votre projet">
