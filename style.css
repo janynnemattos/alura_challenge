@@ -134,27 +134,32 @@ body {
     margin-left: 1.5em;
 
 }
-.button-red, .button-yellow, .button-green {
+
+.button-red, .button-yellow, .button-green,
+.button-red-communaute, .button-yellow-communaute, .button-green-communaute {
     border: none;
-    padding:0.5em;
-    margin: 0.2em;
+    padding:0.7em;
+    margin: 0.3em;
     text-decoration: none;
     border-radius: 50px;
     text-align: left;
 }
-.button-red {
+.button-red, .button-red-communaute {
     background-color: #FF5F56;
 }
-.button-yellow {
+.button-yellow, .button-yellow-communaute {
     background-color: #FFBD2E;
 }
-.button-green {
+.button-green, .button-green-communaute{
     background-color: #27C93F;
 }
-
-.button-red, .button-yellow, .button-green, a:hover {
+.button-red:hover, .button-yellow:hover, .button-green:hover {
     cursor: pointer;
+    opacity: 0.5;
+    transition: .3s;
+    border-radius: 0px;
 }
+
 .text-content-container {
     width: calc(100% - 64px);
     height: 334px;
@@ -171,6 +176,7 @@ body {
     max-height: 80%;
 }
 .text-editor {
+    text-align: left;
     font-family: 'Roboto Mono', monospace;
     background-color: #141414;
     color: #FFFFFF;
@@ -199,7 +205,7 @@ body {
     border: solid;
     border-color: #5081FB;
 }
-.button-highlight:focus .save-project:focus {
+.button-highlight:focus, .save-project:focus {
     background: #96B9FD;
 }
 
@@ -302,45 +308,6 @@ body {
     box-sizing: border-box;
     height: 4em;
 }
-
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgba(45, 65, 91, 0.8);
-  }
-
-  .modal-content {
-    background-color:rgba(45, 65, 91, 1);
-    color: #FFFFFF;
-    height: 24px;
-    text-align: justify;
-    margin: 15% auto;
-    padding: 30px;
-    border: none;
-    border-radius: 8px;
-    width: 40%; 
-    height: auto;
-  }
-
-  .close {
-    color: #FFFFFF;
-    float: right;
-    font-size: 1.1em;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
   
 .button-mobile {
     display: none;

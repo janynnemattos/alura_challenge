@@ -4,7 +4,8 @@ const button = document.querySelector('.button-highlight')
 const titleOfProject = document.querySelector('.name-project')
 const descriptionOfProject = document.querySelector('.description-project')
 
-const buttonClose = document.querySelector('.button-red')
+
+
 
 const buttonColor = document.querySelector('.color-project')
 const backgroundColor = document.querySelector('.text-content-container')
@@ -41,26 +42,17 @@ buttonSave.addEventListener('click', (event) => {
     }else {
         console.log("Local Storage n'est pas supporté")
     }
+    //location.reload()
+})
+//button clear space
+const buttonClose = document.querySelector('.button-red')
+const contentEditor = document.querySelector('.preview')
+buttonClose.addEventListener('click', () => {
+    contentEditor.innerText=""
 })
 
 
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
-//function modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-//function click x, close
-span.onclick = function() {
-  modal.style.display = "none";
-}
-//click outside modal, close
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+
 //buttonsaveimage
 const buttonGreen = document.querySelector('.button-green')
 buttonGreen.addEventListener('click', () => {
@@ -73,9 +65,6 @@ buttonGreen.addEventListener('click', () => {
         link.click();
     });
 })
-
-
-
 
 function buildProject() {
     let project = {
@@ -97,7 +86,8 @@ function atribuiId(){
 
 function saveLocalStorage(objectJson) {
     localStorage.setItem(objectJson.id, JSON.stringify(objectJson))
-    codeArea.innerHTML= ""
+    window.location.href="/alura_challenge/communaute.html"
+    console.log('ok')
 }
 
 

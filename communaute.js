@@ -38,9 +38,9 @@ function createCard(project) {
         <div class="container-project" >
             <div class="text-content-container" style="background-color: ${project.detailsOfProject.colorOfProject}"> 
                 <div class="buttons">
-                    <button class="button-red"></button>
-                    <button class="button-yellow"></button>
-                    <button class="button-green"></button>
+                    <button class="button-red-communaute"></button> 
+                    <button class="button-yellow-communaute"></button> 
+                    <button class="button-green-communaute"></button> 
                 </div>
                 <div class="text-editor">                  
                     <div class="text-editor-container">

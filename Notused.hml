@@ -1,0 +1,66 @@
+// var modal = document.getElementById("myModal");
+// var btn = document.getElementById("myBtn");
+// var span = document.getElementsByClassName("close")[0];
+// //function modal
+// btn.onclick = function() {
+//   modal.style.display = "block";
+// }
+// //function click x, close
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
+// //click outside modal, close
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(45, 65, 91, 0.8);
+  }
+
+  .modal-content {
+    background-color:rgba(45, 65, 91, 1);
+    color: #FFFFFF;
+    height: 24px;
+    text-align: justify;
+    margin: 15% auto;
+    padding: 30px;
+    border: none;
+    border-radius: 8px;
+    width: 40%; 
+    height: auto;
+  }
+
+  .close {
+    color: #FFFFFF;
+    float: right;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  <div id="myModal" class="modal">
+                            <div class="modal-content">
+                              <span class="close">&times;</span>
+                              <h4 class="project-title">Votre projet a été enregistré avec succès !</h4>
+                                <p><br>Pour le voir, rendez-vous sur la page Communauté. 
+                                <br>Ou si vous préférez, vous pouvez entrer un autre code.</p>
+                            </div>                          
+                        </div>
