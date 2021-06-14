@@ -12,6 +12,7 @@ function showProjects() {
     for(let i = 0; i < localStorage.length; i++) {
         projects.push(JSON.parse(localStorage.getItem(i)))
     }
+    console.warn("projects", projects)
     projects.forEach(project => {
         allProjects.innerHTML+= createCard(project)
         const codeHtml = allProjects.querySelector(`[data-id="${project.id}"]`)
@@ -24,12 +25,6 @@ function showProjects() {
         hljs.highlightBlock(codeHtmlBlock)
     })
 }
-//function likes
-let clicks = 0;
-function onClick() {
-    clicks += 1;
-    document.getElementById("clicks").innerHTML = clicks;
-  };
 
 
 function createCard(project) {
@@ -56,9 +51,9 @@ function createCard(project) {
                     <div class="style-click">
                     <button type="button" class="button-project"> <img src="imgs/comentbutton.svg"></button>
                     </div>
-                    <div class="style-click">
-                    <button type="button" onClick="onClick()" class="button-project"><img src="imgs/likebutton.svg"></button>
-                    <a id="clicks" class="icon-project-like">0</a>
+                    <div class="style-click" onClick="onClick(event)">
+                    <button type="button" class="button-project"><img src="imgs/likebutton.svg"></button>
+                    <span class="icon-project-like">0</span>
                     </div>
                 </div>
             </div>
@@ -68,3 +63,12 @@ function createCard(project) {
     console.log(project)
     return card
 }
+
+//function likes
+function onClick(event) {
+    let parent = event.target.closest(".style-click")
+    let target = parent.getElementsByClassName("icon-project-like")[0]
+    let clicks = target.innerHTML
+    clicks++
+    target.innerHTML=clicks
+  };
