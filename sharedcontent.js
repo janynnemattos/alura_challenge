@@ -17,6 +17,7 @@ function toggleMenu(event) {
     }
 }
 
+
 buttonMobile.addEventListener('click', toggleMenu)
 buttonMobile.addEventListener('touchstart', toggleMenu)
 
@@ -32,4 +33,5 @@ window.addEventListener('resize', () => {
     }
 }
 )
+
 

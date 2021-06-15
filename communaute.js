@@ -46,7 +46,7 @@ function createCard(project) {
             <div class="description-project-content">
                 <h2 class="project-title">${project.detailsOfProject.titleOfProject}</h2>
                 <p class="project-description">${project.detailsOfProject.descriptionOfProject}</p>
-                <span class="project-language ${project.detailsOfProject.language}">Langage: ${project.detailsOfProject.language}</span>
+                <span class="project-language ${project.detailsOfProject.language}">Language: ${project.detailsOfProject.language}</span>
                 <div class="interactions-project">
                     <div class="style-click">
                     <button type="button" class="button-project"> <img src="imgs/comentbutton.svg"></button>
@@ -78,3 +78,5 @@ function onClick(event) {
     clicks++
     target.innerHTML=clicks
   };
+
+

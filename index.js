@@ -37,7 +37,7 @@ buttonSave.addEventListener('click', (event) => {
         const project = buildProject()
         saveLocalStorage(project)
     }else {
-        console.log("Local Storage n'est pas supporté")
+        console.log("Local Storage is not supported")
     }
     //location.reload()
 })
