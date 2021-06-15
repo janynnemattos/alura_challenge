@@ -15,7 +15,7 @@ The challenge happened for 4 weeks, starting on 17th May 2021.</p>
 <h2 align="left">Tools</h2>
 
 <p align="justify">The page was marked with HTML5. The style was made with CSS3. And the functions were made with JavaScript.
-I also used the plugin highlight.js to highlight the code.</p>
+I also used the library highlight.js to highlight the code, dom-to-image to dowload the code to an image.</p>
 
 <h2 align="left">Who coded this project?</h2>
 
