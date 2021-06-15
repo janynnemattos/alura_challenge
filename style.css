@@ -26,7 +26,7 @@ body {
     width: 50%;
 }
 .search-text {
-    background-color: rgba(255, 255, 255, 0.16);
+    background-color: #ffffff29;
     color: #FFFFFF;
     border-radius: 8px;
     font-size: 16px;
@@ -52,7 +52,7 @@ body {
     align-items: center;
     color:#FFFFFF;
 }
-.user-photo-head-of-page:hover, .img-logo:hover, .link-nav:hover{
+.user-photo-head-of-page:hover, .img-logo:hover, .link-nav:hover, .user-photo:hover{
     color: #FFFFFF;
     border-radius: 8px;
     opacity: 0.5;
@@ -69,7 +69,7 @@ body {
     letter-spacing: 0.4em;
     text-transform: uppercase;
     color: #FFFFFF;
-    font-size: 12px;
+    font-size: 1em;
     height: 18px;
     padding: 1em;
 }
@@ -154,7 +154,7 @@ body {
 .button-green, .button-green-communaute{
     background-color: #27C93F;
 }
-.button-red:hover,  .button-green:hover {
+.button-red:hover{
     cursor: help;
     opacity: 0.5;
     transition: .3s;
@@ -164,7 +164,7 @@ body {
 .text-content-container {
     width: calc(100% - 64px);
     height: 334px;
-    background-color: #FBFF00;
+    background-color: #7BA4FC;
     border-radius: 24px;
     padding: 32px;
 }
@@ -206,7 +206,7 @@ body {
     padding: 2em;
 }
 
-.button-highlight, .save-project {
+.button-highlight, .save-project, .save-as-image {
     background: #5081FB;
     color: #051D3B;
     border-radius: 8px;
@@ -214,47 +214,49 @@ body {
     width: 100%;
     height: 56px;
     text-align: center;
-    margin: 1em 0;
+    margin: 0.8em 0;
     cursor: pointer;
 }
+.save-as-image {
+    height: 36px;
+}
 
-.button-highlight:hover, .save-project:hover {
+.button-highlight:hover, .save-project:hover, .save-as-image:hover {
     background: #7BA4FC;
 }
 
-.button-highlight:active, .save-project:active {
+.button-highlight:active, .save-project:active, .save-as-image:active {
     background: #7BA4FC;
     border: solid;
     border-color: #5081FB;
 }
-.button-highlight:focus, .save-project:focus {
+.button-highlight:focus, .save-project:focus, .save-as-image:focus {
     background: #96B9FD;
 }
 
 .container-project {
     background-color: rgba(0, 0, 0, 0.16);
-    margin: 2em 0;
-    padding-bottom: 2em;
+    margin: 2em 0.5em;
     box-sizing: border-box;
-    border-radius: 12px;
-    width: 460px;
+    border-radius: 24px;
+    width: 470px;
 }
 .project-title {
     color: #FFFFFF;
-    font-size: 1.5em;
-    line-height: 32px;
+    font-size: 1.6em;
+    line-height: 1.5em;
     text-align: left;
 }
 .project-description {
     color: #FFFFFF;
-    font-style: italic;
-    line-height: 24px;
+    line-height: 1.2em;
 }
 .project-language {
-    color: #FFFFFF;
+    color: #96B9FD;
     font-size: 0.8em;
-    letter-spacing: 0.5em;
-    text-transform: lowercase;
+    font-style: italic;
+    text-transform: capitalize;
+    line-height: 1.1em;
 }
 .description-project-content {
     padding: 1em;
@@ -262,18 +264,26 @@ body {
 .interactions-project{
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 .icon-project, .icon-project-like {
     color: #FFFFFF;
+    font-size: 1.5em;
 }
+
 .button-project{
     appearance: auto;
     background: transparent;
     border: none;
     padding: 8px;
 }
+
+.button-project{
+cursor: pointer;
+}
 .style-click{
-    padding: 0.3em;
+    padding: 0.5em;
+    max-width: 30%;
 }
 .style-click:hover{
     background:  rgba(255, 255, 255, 0.08);
@@ -282,6 +292,14 @@ body {
 .style-click:active{
     background: rgba(255, 255, 255, 0.16);
     border-radius: 16px;
+}
+.user-photo {
+    width: 100px;
+    border-radius: 50px;
+}
+.user-photo-div {
+    max-width: 70%;
+    margin-left: 10em;
 }
 
 /*menu right*/

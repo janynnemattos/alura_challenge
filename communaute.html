@@ -55,6 +55,96 @@
            
             <div class="main-projects">
                 <ul class="all-projects">
+
+                        <div class="container-project" >
+                            <div class="text-content-container" style="background-color:rgb(255, 174, 0)"> 
+                                <div class="buttons">
+                                    <button class="button-red-communaute"></button> 
+                                    <button class="button-yellow-communaute"></button> 
+                                    <button class="button-green-communaute"></button> 
+                                </div>
+                                <div class="text-editor">                  
+                                    <div class="text-editor-container"><a href="index.html"><pre><code class="language-javascript">const buttonMobile = document.querySelector('.button-mobile')
+
+function toggleMenu(event) {
+if (event.type === 'touchstart')event.preventDefault();
+
+const menuNav = document.querySelector('.menu-nav')
+menuNav.classList.toggle('active');
+
+const active = menuNav.classList.contains('active')
+event.currentTarget.setAttribute('aria-expended', active)
+if (active) {
+    event.currentTarget.setAttribute('aria-label', 'Fermer Menu')
+} else {
+    event.currentTarget.setAttribute('aria-label', 'Ouvrir Menu')
+   }
+}</code></pre></a>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="description-project-content">
+                                <h2 class="project-title">Mon projet en JS</h2>
+                                <p class="project-description">Voici la function pour utiliser avec un menu mobile </p>
+                                <span class="project-language">Langage: JavaScript</span>
+                                <div class="interactions-project">
+                                    <div class="style-click">
+                                    <button type="button" class="button-project"> <img src="imgs/comentbutton.svg"></button>
+                                    </div>
+                                    <div class="style-click" onClick="onClick(event)">
+                                    <button type="button" class="button-project"><img src="imgs/likebutton.svg"></button>
+                                    <span class="icon-project-like">32</span>
+                                    </div>
+                                    <div class="user-photo-div">
+                                    <a href="https://www.linkedin.com/in/janynnemattos/" target="_blank"><img class ="user-photo" src="imgs/foto-perfil.jpg" label="useruser"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="container-project" >
+                            <div class="text-content-container"> 
+                                <div class="buttons">
+                                    <button class="button-red-communaute"></button> 
+                                    <button class="button-yellow-communaute"></button> 
+                                    <button class="button-green-communaute"></button> 
+                                </div>
+                                <div class="text-editor">                  
+                                    <div class="text-editor-container"><a href="index.html"><pre><code class="language-css">@media screen and (max-width: 400px) {
+.head-of-page {
+    margin: 0px;
+    display:initial;
+}
+.logo-head-of-page {
+    width: 60%;
+}
+.all-projects {
+    display: block;
+    max-width: 100%;
+}</code></pre></a>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="description-project-content">
+                                <h2 class="project-title">Mon projet en CSS</h2>
+                                <p class="project-description">Voici l'utilisation du media query. </p>
+                                <span class="project-language">Langage: CSS3</span>
+                                <div class="interactions-project">
+                                    <div class="style-click">
+                                    <button type="button" class="button-project"> <img src="imgs/comentbutton.svg"></button>
+                                    </div>
+                                    <div class="style-click" onClick="onClick(event)">
+                                    <button type="button" class="button-project"><img src="imgs/likebutton.svg"></button>
+                                    <span class="icon-project-like">79</span>
+                                    </div>
+                                    <div class="user-photo-div">
+                                    <a href="https://www.linkedin.com/in/janynnemattos/" target="_blank"><img class ="user-photo" src="imgs/foto-perfil.jpg" label="useruser"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </ul>
             </div>
 
@@ -65,4 +155,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="sharedcontent.js"></script>
     <script src="communaute.js"></script>
+    <script>hljs.highlightAll();</script>
 </html>

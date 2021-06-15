@@ -4,9 +4,6 @@ const button = document.querySelector('.button-highlight')
 const titleOfProject = document.querySelector('.name-project')
 const descriptionOfProject = document.querySelector('.description-project')
 
-
-
-
 const buttonColor = document.querySelector('.color-project')
 const backgroundColor = document.querySelector('.text-content-container')
 
@@ -44,6 +41,7 @@ buttonSave.addEventListener('click', (event) => {
     }
     //location.reload()
 })
+
 //button clear space
 const buttonClose = document.querySelector('.button-red')
 const contentEditor = document.querySelector('.preview')
@@ -52,8 +50,8 @@ buttonClose.addEventListener('click', () => {
 })
 
 //buttonsaveimage
-const buttonGreen = document.querySelector('.button-green')
-buttonGreen.addEventListener('click', () => {
+const buttonSaveImg = document.querySelector('.save-as-image')
+buttonSaveImg.addEventListener('click', () => {
     domtoimage.toJpeg(backgroundColor, { quality: 1 })
     .then(function (dataUrl) {
         var link = document.createElement('a');

@@ -46,14 +46,17 @@ function createCard(project) {
             <div class="description-project-content">
                 <h2 class="project-title">${project.detailsOfProject.titleOfProject}</h2>
                 <p class="project-description">${project.detailsOfProject.descriptionOfProject}</p>
-                <span class="project-language ${project.detailsOfProject.language}">${project.detailsOfProject.language}</span>
+                <span class="project-language ${project.detailsOfProject.language}">Langage: ${project.detailsOfProject.language}</span>
                 <div class="interactions-project">
                     <div class="style-click">
                     <button type="button" class="button-project"> <img src="imgs/comentbutton.svg"></button>
                     </div>
                     <div class="style-click" onClick="onClick(event)">
                     <button type="button" class="button-project"><img src="imgs/likebutton.svg"></button>
-                    <span class="icon-project-like">0</span>
+                    <span class="icon-project-like">26</span>
+                    </div>
+                    <div class="user-photo-div">
+                    <a href="https://www.linkedin.com/in/janynnemattos/" target="_blank"><img class ="user-photo" src="imgs/foto-perfil.jpg" label="useruser"></a>
                     </div>
                 </div>
             </div>
@@ -64,6 +67,9 @@ function createCard(project) {
     return card
 }
 
+
+
+  
 //function likes
 function onClick(event) {
     let parent = event.target.closest(".style-click")
