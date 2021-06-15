@@ -28,3 +28,5 @@ I also used the library highlight.js to highlight the code, dom-to-image to dowl
 #AluraChallenges
 <br><br>
 If you still here, I would like to share and register for the future my experience about this challenge. I discovered that no matter how much you know, it's always possible to learn even more. The community of developing is amazing. If it's not working, try again. Sometimes only works at your machine. There are many ways to do the same thing. Don't give up!
+![Index Page](index.png)
+![Communaute Page](commonaute.png)
