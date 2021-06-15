@@ -1,7 +1,11 @@
 <h4 align="justify"> 
-	🚧  Under development  🚧
+	🚧  Under development  🚧 <a href="https://janynnemattos.github.io/alura_challenge/">✨ alura_challenge ✨</a>
 </h4>
-
+<p>
+<img src="https://github.com/janynnemattos/alura_challenge/blob/main/index.png">
+	<p>
+<img src="https://github.com/janynnemattos/alura_challenge/blob/main/commonaute.png">
+		
 <h1 align="left">About the project #alura_challenge</h1>
 
 <p align="justify">Hello everyone, I am glad you are here today.
@@ -28,5 +32,5 @@ I also used the library highlight.js to highlight the code, dom-to-image to dowl
 #AluraChallenges
 <br><br>
 If you still here, I would like to share and register for the future my experience about this challenge. I discovered that no matter how much you know, it's always possible to learn even more. The community of developing is amazing. If it's not working, try again. Sometimes only works at your machine. There are many ways to do the same thing. Don't give up!
-![Index Page](index.png)
-![Communaute Page](commonaute.png)
+
+
