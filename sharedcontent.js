@@ -26,7 +26,7 @@ buttonMobile.addEventListener('touchstart', toggleMenu)
 window.addEventListener('resize', () => {
     let size = window.innerWidth
     console.log(size)
-    if(size < 400) {
+    if(size < 450) {
         navMobile.append(userMobile)
     }else {
         document.querySelector('.head-of-page').append(userMobile)
