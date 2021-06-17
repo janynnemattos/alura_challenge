@@ -1,6 +1,7 @@
 <h4 align="justify"> 
 	🚧  Under development  🚧 <a href="https://janynnemattos.github.io/alura_challenge/">✨ alura_challenge ✨</a>
 </h4>
+<p>Not working: serach tool, comment button, like limit...</p>
 <p>
 <img src="https://github.com/janynnemattos/alura_challenge/blob/main/index.png">
 	<p>
