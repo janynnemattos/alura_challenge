@@ -23,15 +23,18 @@ buttonMobile.addEventListener('touchstart', toggleMenu)
 
 
 //user profile button mobile
-window.addEventListener('resize', () => {
+window.addEventListener('resize', mobileManage)
+document.onload=mobileManage()
+
+
+function mobileManage() {
+    console.log("hello")
     let size = window.innerWidth
     console.log(size)
-    if(size < 450) {
+    if(size <= 450) {
         navMobile.append(userMobile)
     }else {
         document.querySelector('.head-of-page').append(userMobile)
     }
 }
-)
-
 
