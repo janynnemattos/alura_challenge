@@ -49,6 +49,14 @@ buttonClose.addEventListener('click', () => {
     contentEditor.innerText=""
 })
 
+contentEditor.addEventListener('click', () => {
+    console.log("entra")
+    if(contentEditor.innerHTML=='Write your code here...'){
+        contentEditor.innerHTML=""
+    }
+})
+
+
 //buttonsaveimage
 const buttonSaveImg = document.querySelector('.save-as-image')
 buttonSaveImg.addEventListener('click', () => {

@@ -38,3 +38,10 @@ function mobileManage() {
     }
 }
 
+//function search bar
+let inputSearch = document.querySelector('.searchInput')
+function changePage(event) {
+    event.preventDefault()
+    location.replace("/alura_challenge/communaute.html")
+  }
+inputSearch.addEventListener('submit', changePage)
