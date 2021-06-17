@@ -352,7 +352,7 @@ cursor: pointer;
 .button-mobile {
     display: none;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .head-of-page {
         margin: 0px;
         display:initial;

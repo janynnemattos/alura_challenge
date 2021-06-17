@@ -66,9 +66,6 @@ function createCard(project) {
     console.log(project)
     return card
 }
-
-
-
   
 //function likes
 function onClick(event) {
@@ -78,5 +75,4 @@ function onClick(event) {
     clicks++
     target.innerHTML=clicks
   };
-
 
