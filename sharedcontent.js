@@ -31,7 +31,7 @@ function mobileManage() {
     console.log("hello")
     let size = window.innerWidth
     console.log(size)
-    if(size <= 450) {
+    if(size < 1024) {
         navMobile.append(userMobile)
     }else {
         document.querySelector('.head-of-page').append(userMobile)
